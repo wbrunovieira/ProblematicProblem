@@ -7,7 +7,7 @@ namespace ProblematicProblem
      class Program
     {
         static bool cont = true;
-        static System.Collections.Generic.List<string> activities = new List<string>() { "Movies", "Paintball", "Bowling", "Lazer Tag", "LAN Party", "Hiking", "Axe Throwing", "Wine Tasting" };
+        static List<string> activities = new List<string>() { "Movies", "Paintball", "Bowling", "Lazer Tag", "LAN Party", "Hiking", "Axe Throwing", "Wine Tasting" };
 
 
         static void Main(string[] args)
@@ -45,7 +45,7 @@ namespace ProblematicProblem
                 Console.Write("Would you like to see the current list of activities? Sure/No thanks: ");
                 bool seeList = (Console.ReadLine().ToLower() == "sure") ? true : false;
 
-                // missing convert answer Sure? No thanks to bool
+               
 
                 if (seeList == true)
                 {
@@ -59,7 +59,7 @@ namespace ProblematicProblem
                     Console.Write("Would you like to add any activities before we generate one? yes/no: ");
                     bool addToList = (Console.ReadLine().ToLower() == "yes") ? true : false;
 
-                    // missing convert answer Sure? No thanks to bool
+                    
                     Console.WriteLine();
 
                     while (addToList)
@@ -79,7 +79,7 @@ namespace ProblematicProblem
                         Console.WriteLine();
                         Console.WriteLine("Would you like to add more? yes/no: ");
                         addToList = (Console.ReadLine().ToLower() == "yes")? true : false;
-                        // missing convert answer Sure? No thanks to bool
+                        
                     }
                 }
 
